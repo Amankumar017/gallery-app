@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    background-color: cornflowerblue;
+    padding:50px 0 30px;
+    >h1{
+        font-size:45px;
+    }
+}
+
+.search{
+   width:50%;
+   margin:25px auto;
+   text-align: center;
+}
+input{
+    width:55%;
+    padding:8px 30px;
+    font-size:24px;
+    outline: none;
+}
+
+button{
+    padding: 8px 30px;
+    font-size:24px;
+    background-color:rgb(0, 139, 134);
+    cursor: pointer;
+    border:2px solid black;
+}
+
+ .search-result {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    margin: 40px auto; 
+    width:90%;
+    margin-top:30px;
+  }
+  
+  .search-result > div {
+    position: relative; 
+    overflow: hidden; 
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+  }
+  
+  .search-result > div img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    cursor: pointer;
+  }
+  
+  .search-result > div .img-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-result > div h3, .search-result > div p {
+    margin: 0;
+    font-size: 16px;
+    text-transform: capitalize; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+    .header {
+        padding: 20px 0;
+    }
+      
+      .header h1 {
+        font-size: 26px;
+        margin-top:15px;
+        padding: 10px;
+      }
+      
+      .search {
+        width: 100%;
+        max-width: 300px;
+        margin:auto;
+      }
+      
+      input {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px; /* Adjust the font size for smaller screens (mobile) */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      
+      button {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px; /* Adjust the font size for smaller screens (mobile) */
+        border-radius: 5px;
+      }
+      
+    .search-result {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+  
+    .search-result > div img {
+      height: 300px; 
+    }
+  }
+  
+ 
